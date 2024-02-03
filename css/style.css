@@ -169,10 +169,7 @@ header a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/header/people-office\ 1.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    url(../images/header/people-office\ 1.png);
   max-width: 1440px;
 }
 
@@ -234,8 +231,18 @@ header a {
   gap: 24px;
 }
 
+/* ========= виглядає краще, ніж як треба в дз
+
 .section-list-title {
   margin: 8px 0;
+}
+*/
+.section-list-title {
+  margin-bottom: 8px;
+}
+
+.svg-container {
+  margin-bottom: 8px;
 }
 
 .section-list-item {
