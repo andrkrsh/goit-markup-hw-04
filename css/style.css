@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #434455;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07em;
+  letter-spacing: 1.12px;
+}
+
+h2 {
+  text-align: center;
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11em;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+h3 {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 0.4px;
+}
+
+p {
+  line-height: 1.5em;
+  letter-spacing: 0.32px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.logo {
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header .logo {
+  margin-right: 76px;
+}
+
+.header-logo-span {
+  color: #2e2f42;
+}
+
+header a {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.header-menu-link {
+  color: #2e2f42;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 24px 0;
+  display: block;
+}
+
+.adress {
+  font-style: normal;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.adress-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.adress-menu-link {
+  color: #434455;
+}
+
+.header a:hover,
+.header a:focus {
+  color: #404bbf;
+}
+
+.introduction {
+  padding: 188px 0;
+  background: #2e2f42;
+}
+
+.introduction-title {
+  max-width: 496px;
+}
+
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: #4d5ae5;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  border-color: #4d5ae5;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
+  cursor: pointer;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-list {
+  display: flex;
+  gap: 24px;
+}
+
+.section-list-title {
+  margin-bottom: 8px;
+}
+
+.section-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.team {
+  background: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-container {
+  border-top: none;
+}
+
+.team-title {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-list-item {
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-title {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.team-member-info {
+  padding: 32px 0;
+}
+
+.team-list-text {
+  text-align: center;
+}
+
+.portfolio {
+  padding: 120px 0;
+}
+
+.portfolio-title {
+  margin-bottom: 72px;
+}
+
+.portfolio-container {
+  border-top: none;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-menu-title {
+  margin-bottom: 8px;
+}
+
+.footer {
+  padding: 100px 0;
+  background: #2e2f42;
+}
+
+.footer .logo-span {
+  color: #f4f4fd;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  color: #f4f4fd;
+}
+
+.footer p {
+  width: 256px;
+}
