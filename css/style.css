@@ -118,6 +118,27 @@ header a {
   text-decoration: none;
   padding: 24px 0;
   display: block;
+  position: relative;
+}
+
+.header-menu-link:hover {
+  color: #404bbf;
+}
+
+.header-menu-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 2px;
+  background: #404bbf;
+  width: 0;
+  transition: 0.3s;
+}
+
+.header-menu-link:hover::after {
+  width: 100%;
 }
 
 .adress {
@@ -144,11 +165,19 @@ header a {
 
 .introduction {
   padding: 188px 0;
-  background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/header/people-office\ 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .introduction-title {
   max-width: 496px;
+  margin-bottom: 48px;
 }
 
 .introduction-container {
@@ -204,11 +233,21 @@ header a {
 }
 
 .section-list-title {
-  margin-bottom: 8px;
+  margin: 8px 0;
 }
 
 .section-list-item {
   width: calc((100% - 72px) / 4);
+}
+
+.svg-container {
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team {
@@ -235,7 +274,6 @@ header a {
 }
 
 .team-list-title {
-  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -245,6 +283,23 @@ header a {
 
 .team-list-text {
   text-align: center;
+  margin: 8px 0;
+}
+
+.team-social-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.team-social-item a {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio {
@@ -279,6 +334,12 @@ header a {
 .footer {
   padding: 100px 0;
   background: #2e2f42;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  gap: 120px;
 }
 
 .footer .logo-span {
