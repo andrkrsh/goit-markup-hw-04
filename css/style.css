@@ -138,7 +138,7 @@ header a {
 }
 
 .header-menu-link {
-  color: #404bbf;
+  color: #2e2f42;
   font-weight: 500;
   text-decoration: none;
   padding: 24px 0;
@@ -151,7 +151,11 @@ header a {
   color: #404bbf;
 }
 
-.header-menu-link::after {
+.active {
+  color: #404bbf;
+}
+
+.active::after {
   position: absolute;
   content: "";
   left: 0;
